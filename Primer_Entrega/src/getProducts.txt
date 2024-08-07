@@ -1,0 +1,5 @@
+[{"id":1,"title":"coca","description":"pan integral","code":"1233","price":1300,"stock":20,"category":"PANIFICADOS","status":true},
+{"id":2,"title":"pan","description":"pan integral","code":"1233","price":1300,"stock":20,"category":"PANIFICADOS","status":true},
+{"id":3,"title":"vino","description":"pan integral","code":"1233","price":1300,"stock":20,"category":"PANIFICADOS","status":true},
+{"id":4,"title":"fiambre","description":"pan integral","code":"1233","price":1300,"stock":20,"category":"PANIFICADOS","status":true},
+{"id":5,"title":"queso","description":"pan integral","code":"1233","price":1300,"stock":20,"category":"PANIFICADOS","status":true}]
