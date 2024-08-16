@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-image: linear-gradient(to bottom right, #e0d090, #be55f2);
+    height: 1200px;
+}
+
+h1{
+    align-self: center;
+    font-family: "Roboto Condensed", sans-serif;
+    color: rgb(210, 161, 235);
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.divForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+
+}
+
+.divForm form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: 2px outset #cf87f3;
+    border-radius: 12px;
+    padding: 3em 2em;
+    background-color: white;
+}
+
+
+.divForm form label{
+    margin-bottom: 0.1em;
+    font-size: 15px;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+
+.inputDiv{
+    position: relative;
+}
+
+.input{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px inset #cf87f3;
+    border-radius: 15px;
+    margin-bottom: 1.5em;
+}
+
+.placeholder{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    font-size: 14px;
+    padding: 0px 5px;
+    color: #a68cb4;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.input:focus + .placeholder{
+    top: -10px;
+    color: #be5fee;
+    background-color: white;
+}
+
+#prodSubmit{
+    width: 8em;
+    height: 3em;
+    align-self: center;
+    background-image: linear-gradient(to bottom right, #e0d090, #be55f2);
+    border-radius: 10px;
+    font-size: 15px;
+    border: 1px solid #be5fee;
+}
