@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-image: linear-gradient(to bottom right, #e0d090, #be55f2);
+    height: 100%;
+}
+
+h1{
+    align-self: center;
+    font-family: "Roboto Condensed", sans-serif;
+    color: rgb(210, 161, 235);
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.divForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    width: 100%;
+}
+
+.divForm form{
+    display: flex;
+    flex-direction: column;
+    
+    width: 40%;
+    border: 2px outset #cf87f3;
+    border-radius: 12px;
+    padding: 3em 2em;
+    background-color: white;
+}
+
+
+.divForm form label{
+    margin-bottom: 0.1em;
+    font-size: 15px;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+
+
+.inputDiv{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "input";   
+    margin-bottom: 1.5em;
+}
+
+
+.input{
+    grid-area: input;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px inset #cf87f3;
+    padding: 15px;
+    color: #a682b9;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+.placeholder{
+    grid-area: input;
+    z-index: 100;
+    width:  max-content;
+    height: 100%;
+    margin-left:  1rem;
+    display: flex;
+    align-items: center;
+    transform-origin: left center;
+    transition: transform .3s;    
+    font-size: 14px;
+    color: #a682b9;
+
+}
+
+.input:focus + .placeholder,
+.input:not(:placeholder-shown) + .placeholder{
+    height: 50%;
+    background-color: white;
+    transform: translateY(-50%);
+}
+
+
+#prodSubmit{
+    width: 8em;
+    height: 3em;
+    align-self: center;
+    background-image: linear-gradient(to bottom right, #e0d090, #be55f2);
+    border-radius: 10px;
+    font-size: 15px;
+    border: 1px solid #be5fee;
+    outline: none;
+
+}
+
+#prodSubmit:hover{
+    transform: scale(1.1,1.1);
+    background-image: linear-gradient(to bottom right, #be55f2, #e0d090);
+}
+

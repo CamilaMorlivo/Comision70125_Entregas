@@ -1,0 +1,45 @@
+<div class="divForm">
+
+    <form action="/" method="POST">
+
+        <h1>INGRESE UN PRODUCTO</h1>
+
+        <div class="inputDiv">
+            <input placeholder=" " type="text" class="input" id="prodTitle" name="prodTitle" >
+            <label class="placeholder" >Titulo: </label>
+        </div>
+
+        <div class="inputDiv">
+            <input placeholder=" " type="text" class="input" id="prodDesc" name="prodDesc"> 
+            <label class="placeholder">Descripción: </label>
+        </div>
+            
+        <div class="inputDiv">
+            <input placeholder=" " type="text" class="input" id="prodCode" name="prodCode"> 
+            <label class="placeholder">Código: </label>
+        </div>
+
+        <div class="inputDiv">
+            <input placeholder=" " type="text" class="input" id="prodPrecio" name="prodPrecio"> 
+            <label class="placeholder">Precio: </label>
+        </div>
+
+        <div class="inputDiv">
+            <input placeholder=" " type="text" class="input" id="prodStock" name="prodStock"> 
+            <label class="placeholder">Stock: </label>
+        </div>
+
+        <div class="inputDiv">
+            <input placeholder=" " type="text" class="input" id="prodCat" name="prodCat"> 
+            <label class="placeholder">Categoría: </label>
+        </div>
+
+
+        <input type="submit" value="Enviar" id="prodSubmit" name="prodSubmit">
+        
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/assets/js/realTimeProducts.js"></script>

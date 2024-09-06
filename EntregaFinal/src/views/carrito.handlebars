@@ -1,0 +1,21 @@
+<div class="divListProduct">
+
+    <div>
+        <h1 id="listProductsTitle">PRODUCTOS DEL CARRITO:</h1>
+        <table id="messageLogs">
+            {{#each carrito}}
+            <tr>
+                <th>{{this.product.title}}</th>
+                <th>{{this.product.description}}</th>
+                <th>{{this.product.price}}</th>
+                <th>{{this.product.category}}</th>
+            </tr>
+            {{/each}}
+        </table>   
+
+    </div>   
+    
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js "></script>
+<script src="/socket.io/socket.io.js"></script>
